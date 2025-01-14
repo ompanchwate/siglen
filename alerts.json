@@ -1,0 +1,27 @@
+{
+    "id1": {
+      "interval": 2, 
+      "metric_query": "-1h:now:some_metric:avg",
+      "condition_operator": ">",
+      "condition_value": 50
+    },
+    "id2": {
+      "interval": 5,
+      "metric_query": "-1h:now:another_metric:sum",
+      "condition_operator": "<",
+      "condition_value": 100
+    },
+    "id3": {
+      "interval":8,
+      "metric_query": "-1h:now:another_metric:sum",
+      "condition_operator": "<",
+      "condition_value": 50
+    },
+    "id4": {
+      "interval": 10,
+      "metric_query": "-1h:now:another_metric:sum",
+      "condition_operator": ">",
+      "condition_value": 150
+    }
+  }
+  
