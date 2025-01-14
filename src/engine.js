@@ -72,7 +72,7 @@ const processAlerts = async () => {
         const batchDuration = Date.now() - batchStart;
         
         // Monitor batch processing time
-        if (batchDuration > intervalMs * 0.8) { // Alert if batch takes >80% of interval
+        if (batchDuration > intervalMs * 0.3) { // Alert if batch takes >80% of interval
           const warningMessage = `WARNING: Batch processing time (${batchDuration}ms) approaching interval time (${intervalMs}ms)`;
           log(warningMessage);
           logToFile(warningMessage);

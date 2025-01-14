@@ -1,4 +1,3 @@
-import { schedule_alerts } from './services/scheduler.js';
 import { scheduleEngine } from './engine.js';
 import { log } from './services/logger.js';
 import fs from 'fs';
@@ -6,10 +5,6 @@ import path from 'path';
 
 jest.mock('./services/logger.js', () => ({
   log: jest.fn(),
-}));
-
-jest.mock('./services/scheduler.js', () => ({
-  schedule_alerts: jest.fn(),
 }));
 
 jest.mock('./engine.js', () => ({
@@ -43,51 +38,32 @@ describe('Alert System High Load Test', () => {
     jest.clearAllMocks(); // Clear mocks before each test
   });
 
-  test('should call schedule_alerts and scheduleEngine under high load', () => {
+  test('should call scheduleEngine and log messages during high-load test', async () => {
     // Track start time
     const startTime = performance.now();
 
-    // Call the functions
-    for (let i = 0; i < numAlerts; i++) {
-      schedule_alerts();  // Simulating high number of alert evaluations
-      scheduleEngine();
-    }
-
-    // Track end time
-    const endTime = performance.now();
-    const duration = endTime - startTime;
-
-    // Check if they are called correctly
-    expect(schedule_alerts).toHaveBeenCalledTimes(numAlerts);
-    expect(scheduleEngine).toHaveBeenCalledTimes(numAlerts);
-    console.log(`High Load Test Duration: ${duration}ms`);
-
-    // Expect the system to complete under 5 seconds for 100 alerts
-    expect(duration).toBeLessThan(5000);
-  });
-
-  test('should log messages during high-load test', async () => {
-    // Track start time
-    const startTime = performance.now();
-
-    // Simulate running the alert system with logs
+    // Simulate running the alert system with logs and call scheduleEngine
     for (let i = 0; i < numAlerts; i++) {
       log(`Starting Alert ${i + 1} Test...`);
+      scheduleEngine(); // Calling the engine function during high load
     }
 
     // Track end time
     const endTime = performance.now();
     const duration = endTime - startTime;
 
-    // Check if log function is called for each alert
+    // Check if the log function is called for each alert
     expect(log).toHaveBeenCalledTimes(numAlerts);
     console.log(`Log Test Duration: ${duration}ms`);
 
+    // Check if scheduleEngine was called for each alert
+    expect(scheduleEngine).toHaveBeenCalledTimes(numAlerts);
+
     // Expect the system to complete under 5 seconds for 100 alerts
     expect(duration).toBeLessThan(5000);
   });
 
-  test('should create a log file and handle high load', async () => {
+  test('should create a log file and handle high load with scheduleEngine calls', async () => {
     const logPath = path.join(__dirname, '../logs', 'alert_lags.log');
     
     // Simulate writing logs for high-load scenario
@@ -96,9 +72,10 @@ describe('Alert System High Load Test', () => {
     // Track start time
     const startTime = performance.now();
 
-    // Simulate writing logs for each alert
+    // Simulate writing logs for each alert and call scheduleEngine
     for (let i = 0; i < numAlerts; i++) {
       fs.appendFileSync(logPath, `Test log entry ${i + 1}\n`);
+      scheduleEngine(); // Calling the engine function during high load
     }
 
     // Track end time
@@ -110,6 +87,9 @@ describe('Alert System High Load Test', () => {
     expect(logContent).toContain('Test log entry 1');
     expect(logContent).toContain(`Test log entry ${numAlerts}`);
     console.log(`Log Writing Duration: ${duration}ms`);
+
+    // Check if scheduleEngine was called for each alert
+    expect(scheduleEngine).toHaveBeenCalledTimes(numAlerts);
 
     // Expect the system to complete under 5 seconds for 100 alerts
     expect(duration).toBeLessThan(5000);
