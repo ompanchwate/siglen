@@ -60,7 +60,7 @@ describe('Alert System Tests', () => {
   });
 
   test('should create a log file and log messages', async () => {
-    const logPath = path.join(__dirname, 'logs', 'alert_lags.log');
+    const logPath = path.join(__dirname, '../logs', 'alert_lags.log');
     
     // Simulate a log being written
     fs.mkdirSync(path.dirname(logPath), { recursive: true }); // Ensure the directory exists

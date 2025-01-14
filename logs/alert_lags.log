@@ -1,79 +1,13 @@
-2025-01-14T05:36:40.954Z - Alert ID: id1 has lagged by 2017ms, exceeding the threshold of 200ms.
-2025-01-14T05:36:41.931Z - Alert ID: id1, Condition Met: false, Evaluation Time: 942ms
-2025-01-14T05:36:42.988Z - Alert ID: id1 has lagged by 1999ms, exceeding the threshold of 200ms.
-2025-01-14T05:36:43.299Z - Alert ID: id1, Condition Met: false, Evaluation Time: 310ms
-2025-01-14T05:36:43.936Z - Alert ID: id2 has lagged by 5000ms, exceeding the threshold of 200ms.
-2025-01-14T05:36:44.843Z - Alert ID: id2, Condition Met: true, Evaluation Time: 906ms
-2025-01-14T05:36:44.998Z - Alert ID: id1 has lagged by 2008ms, exceeding the threshold of 200ms.
-2025-01-14T05:36:45.872Z - Alert ID: id1, Condition Met: false, Evaluation Time: 872ms
-2025-01-14T05:36:46.944Z - Alert ID: id3 has lagged by 8007ms, exceeding the threshold of 200ms.
-2025-01-14T05:36:47.006Z - Alert ID: id1 has lagged by 2007ms, exceeding the threshold of 200ms.
-2025-01-14T05:36:47.458Z - Alert ID: id1, Condition Met: false, Evaluation Time: 449ms
-2025-01-14T05:36:47.691Z - Alert ID: id3, Condition Met: true, Evaluation Time: 705ms
-2025-01-14T05:36:48.938Z - Alert ID: id4 has lagged by 10000ms, exceeding the threshold of 200ms.
-2025-01-14T05:36:48.954Z - Alert ID: id2 has lagged by 5014ms, exceeding the threshold of 200ms.
-2025-01-14T05:36:49.014Z - Alert ID: id2, Condition Met: true, Evaluation Time: 58ms
-2025-01-14T05:36:49.015Z - Alert ID: id1 has lagged by 2008ms, exceeding the threshold of 200ms.
-2025-01-14T05:36:49.029Z - Alert ID: id4, Condition Met: false, Evaluation Time: 90ms
-2025-01-14T05:36:49.902Z - Alert ID: id1, Condition Met: false, Evaluation Time: 886ms
-2025-01-14T05:36:51.023Z - Alert ID: id1 has lagged by 2006ms, exceeding the threshold of 200ms.
-2025-01-14T05:39:13.682Z - [ERROR] Alert ID: id3 took too long to evaluate. Evaluation Time: 512ms (Threshold: 500ms)
-2025-01-14T05:39:15.867Z - [ERROR] Alert ID: id3 took too long to evaluate. Evaluation Time: 684ms (Threshold: 500ms)
-2025-01-14T05:39:15.990Z - [ERROR] Alert ID: id2 took too long to evaluate. Evaluation Time: 808ms (Threshold: 500ms)
-2025-01-14T05:39:16.161Z - [ERROR] Alert ID: id1 took too long to evaluate. Evaluation Time: 979ms (Threshold: 500ms)
-2025-01-14T05:39:17.767Z - [ERROR] Alert ID: id4 took too long to evaluate. Evaluation Time: 577ms (Threshold: 500ms)
-2025-01-14T05:39:19.972Z - [ERROR] Alert ID: id2 took too long to evaluate. Evaluation Time: 774ms (Threshold: 500ms)
-2025-01-14T05:39:20.190Z - [ERROR] Alert ID: id1 took too long to evaluate. Evaluation Time: 993ms (Threshold: 500ms)
-2025-01-14T05:39:21.830Z - [ERROR] Alert ID: id1 took too long to evaluate. Evaluation Time: 626ms (Threshold: 500ms)
-2025-01-14T05:51:29.705Z - [ERROR] Alert ID: id3 took too long to evaluate. Evaluation Time: 510ms (Threshold: 500ms)
-2025-01-14T05:51:29.908Z - [ERROR] Alert ID: id4 took too long to evaluate. Evaluation Time: 713ms (Threshold: 500ms)
-2025-01-14T05:51:31.909Z - [ERROR] Alert ID: id2 took too long to evaluate. Evaluation Time: 703ms (Threshold: 500ms)
-2025-01-14T05:51:32.000Z - [ERROR] Alert ID: id4 took too long to evaluate. Evaluation Time: 796ms (Threshold: 500ms)
-2025-01-14T05:51:32.127Z - [ERROR] Alert ID: id3 took too long to evaluate. Evaluation Time: 922ms (Threshold: 500ms)
-2025-01-14T05:51:34.088Z - [ERROR] Alert ID: id2 took too long to evaluate. Evaluation Time: 870ms (Threshold: 500ms)
-2025-01-14T05:51:35.975Z - [ERROR] Alert ID: id1 took too long to evaluate. Evaluation Time: 746ms (Threshold: 500ms)
-2025-01-14T05:51:36.129Z - [ERROR] Alert ID: id4 took too long to evaluate. Evaluation Time: 899ms (Threshold: 500ms)
-2025-01-14T05:51:36.159Z - [ERROR] Alert ID: id3 took too long to evaluate. Evaluation Time: 930ms (Threshold: 500ms)
-2025-01-14T05:51:37.810Z - [ERROR] Alert ID: id2 took too long to evaluate. Evaluation Time: 576ms (Threshold: 500ms)
-2025-01-14T05:51:37.963Z - [ERROR] Alert ID: id4 took too long to evaluate. Evaluation Time: 730ms (Threshold: 500ms)
-2025-01-14T05:51:38.148Z - [ERROR] Alert ID: id1 took too long to evaluate. Evaluation Time: 916ms (Threshold: 500ms)
-2025-01-14T05:51:40.067Z - [ERROR] Alert ID: id4 took too long to evaluate. Evaluation Time: 826ms (Threshold: 500ms)
-2025-01-14T05:52:27.369Z - Batch Processing - Alert ID: id1, Execution Time: 264ms
-2025-01-14T05:52:29.799Z - Batch Processing - Alert ID: id1, Execution Time: 687ms
-2025-01-14T05:52:31.058Z - Batch Processing - Alert ID: id2, Execution Time: 948ms
-2025-01-14T05:52:31.231Z - Batch Processing - Alert ID: id1, Execution Time: 111ms
-2025-01-14T05:52:33.273Z - Batch Processing - Alert ID: id3, Execution Time: 171ms
-2025-01-14T05:52:33.818Z - Batch Processing - Alert ID: id1, Execution Time: 685ms
-2025-01-14T05:52:35.504Z - Batch Processing - Alert ID: id2, Execution Time: 391ms
-2025-01-14T05:52:35.817Z - Batch Processing - Alert ID: id4, Execution Time: 704ms
-2025-01-14T05:52:35.878Z - Batch Processing - Alert ID: id1, Execution Time: 734ms
-2025-01-14T05:52:37.825Z - Batch Processing - Alert ID: id1, Execution Time: 669ms
-2025-01-14T05:54:46.354Z - Batch Processing - Alert ID: id1, Execution Time: 200ms
-2025-01-14T05:54:48.921Z - Batch Processing - Alert ID: id1, Execution Time: 766ms
-2025-01-14T05:54:49.776Z - Batch Processing - Alert ID: id2, Execution Time: 621ms
-2025-01-14T05:54:50.417Z - Batch Processing - Alert ID: id1, Execution Time: 251ms
-2025-01-14T05:54:52.280Z - Batch Processing - Alert ID: id1, Execution Time: 108ms
-2025-01-14T05:54:53.012Z - Batch Processing - Alert ID: id3, Execution Time: 856ms
-2025-01-14T05:54:54.396Z - Batch Processing - Alert ID: id2, Execution Time: 231ms
-2025-01-14T05:54:54.649Z - Batch Processing - Alert ID: id1, Execution Time: 469ms
-2025-01-14T05:54:55.039Z - Batch Processing - Alert ID: id4, Execution Time: 889ms
-2025-01-14T05:54:56.909Z - Batch Processing - Alert ID: id1, Execution Time: 716ms
-2025-01-14T05:54:59.047Z - Batch Processing - Alert ID: id1, Execution Time: 843ms
-2025-01-14T05:54:59.828Z - Batch Processing - Alert ID: id2, Execution Time: 658ms
-2025-01-14T05:55:00.778Z - Batch Processing - Alert ID: id1, Execution Time: 560ms
-2025-01-14T05:55:01.047Z - Batch Processing - Alert ID: id3, Execution Time: 891ms
-2025-01-14T05:55:02.927Z - Batch Processing - Alert ID: id1, Execution Time: 699ms
-2025-01-14T05:55:04.208Z - Batch Processing - Alert ID: id4, Execution Time: 48ms
-2025-01-14T05:55:04.333Z - Batch Processing - Alert ID: id2, Execution Time: 157ms
-2025-01-14T05:55:05.031Z - Batch Processing - Alert ID: id1, Execution Time: 792ms
-2025-01-14T05:55:06.454Z - Batch Processing - Alert ID: id1, Execution Time: 204ms
-2025-01-14T05:55:08.344Z - Batch Processing - Alert ID: id3, Execution Time: 173ms
-2025-01-14T05:55:09.263Z - Batch Processing - Alert ID: id1, Execution Time: 998ms
-2025-01-14T05:55:09.514Z - Batch Processing - Alert ID: id2, Execution Time: 329ms
-2025-01-14T05:55:10.463Z - Batch Processing - Alert ID: id1, Execution Time: 186ms
-2025-01-14T05:55:12.334Z - Batch Processing - Alert ID: id1, Execution Time: 47ms
-2025-01-14T05:55:14.435Z - Batch Processing - Alert ID: id2, Execution Time: 235ms
-2025-01-14T05:55:14.590Z - Batch Processing - Alert ID: id4, Execution Time: 421ms
-2025-01-14T05:55:14.715Z - Batch Processing - Alert ID: id1, Execution Time: 422ms
-2025-01-14T05:55:16.928Z - Batch Processing - Alert ID: id3, Execution Time: 750ms
-2025-01-14T05:55:17.146Z - Batch Processing - Alert ID: id1, Execution Time: 842ms
+2025-01-14T06:28:04.192Z - Batch Processing - Alert ID: id1, Execution Time: 456ms
+2025-01-14T06:28:06.394Z - Batch Processing - Alert ID: id1, Execution Time: 657ms
+2025-01-14T06:28:07.621Z - Batch Processing - Alert ID: id2, Execution Time: 884ms
+2025-01-14T06:28:07.900Z - Batch Processing - Alert ID: id1, Execution Time: 156ms
+2025-01-14T06:28:10.526Z - Batch Processing - Alert ID: id1, Execution Time: 777ms
+2025-01-14T06:28:10.542Z - Batch Processing - Alert ID: id3, Execution Time: 793ms
+2025-01-14T06:28:11.788Z - Batch Processing - Alert ID: id4, Execution Time: 48ms
+2025-01-14T06:28:12.473Z - Batch Processing - Alert ID: id1, Execution Time: 717ms
+2025-01-14T06:28:12.503Z - Batch Processing - Alert ID: id2, Execution Time: 763ms
+2025-01-14T06:28:13.850Z - Batch Processing - Alert ID: id1, Execution Time: 80ms
+2025-01-14T06:28:16.738Z - Batch Processing - Alert ID: id1, Execution Time: 954ms
+2025-01-14T06:28:16.971Z - Batch Processing - Alert ID: id2, Execution Time: 218ms
+2025-01-14T06:28:17.846Z - Batch Processing - Alert ID: id3, Execution Time: 94ms
