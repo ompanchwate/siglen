@@ -1,5 +1,6 @@
 import { log } from './logger.js';
 
+// random lags to simulate real situations 
 const run_metric_query = async (metricQuery) => {
   return new Promise((resolve) => {
     const result = Math.random() > 0.5;
